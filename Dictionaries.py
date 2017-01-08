@@ -74,6 +74,18 @@ for key in Ks: #iterate through the sorted keys
 for key in sorted(D):
     print(key, '=>', D[key])
 
-#page 171
+
+for c in 'spam':
+    print(c.upper())
+
+#a while loop example
+
+x = 4
+while x > 0:
+    print('spam!' * x)
+    x -=1
+
+
+
 
 
