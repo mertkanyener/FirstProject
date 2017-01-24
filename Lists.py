@@ -60,3 +60,26 @@ result = next(G)
 print(result)
 
 
+#Searches for each key in the objects list and reports on the search's outcome
+
+items = ["aaa", 111, (4,5), 2.01]
+tests = [(4,5), 3.14]
+
+for key in tests:
+    for item in items:
+        if item == key:
+            print(key, "was found")
+            break
+        else:
+            print(key, "not found!")
+
+#Parallel traversals: zip and map
+
+L1 = [1,2,3,4]
+L2 = [5,6,7,8]
+
+print(list(zip(L1,L2)))
+
+for (x,y) in zip(L1,L2):
+    print(x,y, '--', x+y)
+
